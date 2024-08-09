@@ -1,0 +1,394 @@
+.navbarcolor {
+    background-color: #8b4f39;
+    color: #A90F2E;
+}
+
+.myFooter {
+    background-color: #8b4f39;
+    color: #F7D841;
+    position: relative;
+    margin-top: 14rem;
+}
+
+.AJheader {
+    height: 3rem;
+    width: 3rem;
+}
+
+body {
+    background-color: #8b4f39;
+}
+
+.title {
+    color:#F7D841;
+    font-size: 4.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.titleImage {
+    background-image: url('../images/average joes.png');
+    background-size: cover;
+    background-position: center;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.titleContainer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 11rem 0 11rem;
+}
+
+.size {
+    margin-bottom: .65rem;
+    text-align: center;
+}
+
+.AdminTitle {
+    text-align: center;
+    color: #F7D841;
+    margin-bottom: 2rem;
+}
+
+.Admin {
+    text-align: center;
+    color: #F7D841;
+}
+
+.dodgeballtitle {
+    text-align: center;
+    color: #F7D841;
+}
+
+.AboutUsTitle {
+    text-align: center;
+    color: #F7D841;
+    font-size: 4rem;
+}
+
+.gymwearproductstitle {
+    text-align: center;
+    color: #F7D841;
+}
+
+.aboutAJ {
+    margin-top: 5rem;
+    text-align: center;
+    color: #F7D841;
+}
+
+.aboutAJtext {
+    text-align: left;
+    margin:1.5rem 0 3rem 0;
+    font-size: 1.25rem;
+}
+
+.dodgeballcarousel {
+    color: #F7D841;
+    margin-top: 5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.dodgeballitemtype {
+    padding-bottom: 1.5rem;
+}
+
+.dodgeballCarouselPic {
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 1.5rem;
+}
+
+.gymwearcontainer {
+    color: #F7D841;
+    padding: .5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+#gymweartitle {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.gymwearitems {
+    justify-content: space-between;
+    display: inline;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.gymitem1 {
+    text-align: center;
+    vertical-align: top;
+    align-content: center;
+}
+
+.gymitem2 {
+    text-align: center;
+    vertical-align: top;
+}
+
+.gymitem3 {
+    text-align: center;
+    vertical-align: top;
+}
+
+.dodgeballTeam {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    color: #F7D841;
+    font: .5rem;
+}
+
+.aboutDodgeballContainer {
+    justify-content: space-between;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.aboutDodgeballText {
+    color: #F7D841;
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+#dodgeballTeamImage {
+    background-image: url('../images/averagejoesteamimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    width: 25rem;
+}
+
+.owner {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    color: #F7D841;
+    font: .5rem;
+}
+
+.videoContainer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.video {
+    height: 35rem;
+    width: 35rem;
+}
+
+.videoText {
+    color: #F7D841;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+
+.ownerContainer {
+    justify-content: space-between;
+    vertical-align: top;
+    align-items: center;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.ownerText {
+    color: #F7D841;
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+#ownerImage {
+    background-image: url('../images/ownerimage.png');
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    width: 25rem;
+}
+
+#gymitem1pic {
+    background-image: url('../images/tee-g10e6c438c_1280.png');
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+    
+}
+
+#gymitem2pic {
+    background-image: url('../images/man-g5f689550f_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+}
+
+#gymitem3pic {
+    background-image: url('../images/hoodie-g109c444f9_1280.png');
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+}
+
+.productcontainer {
+    color: #F7D841;
+    padding: .5rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+#producttitle {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.homeImages {
+    justify-content: space-between;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.aboutusLink {
+    background-image: url('../images/danielle-cerullo-cqfnt66ttzm-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    display: inline-block;
+    color: #F7D841;
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 1.75em;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+.dodgeballLink {
+    background-image: url('../images/wan-san-yip-7x60-5nr3tk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    color: #F7D841;
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 1.6em;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color: black;
+}
+
+.productsLink {
+    background-image: url('../images/parker-burchfield-tvg4wvjgsey-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    display: inline-block;
+    color: #F7D841;
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 1.5em;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color: black;
+}
+
+
+.productitems {
+    height: 20rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.productitem1 {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.productitem2 {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.productitem3 {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#productitem1pic {
+    background-image: url('../images/nature-zen-zf5c6-5qdxs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+    align-items: center;
+}
+
+#productitem2pic {
+    background-image: url('../images/chu-gummies-cxvvda85tps-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+}
+
+#productitem3pic {
+    background-image: url('../images/jorge-franganillo-utbmw32lioi-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: .5rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #A90F2E;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: calc(50% - 3vh);
+}
+
+.carousel-control-prev {
+    left: 15%;
+}
+
+.carousel-control-next {
+    right: 15%;
+}
+
+

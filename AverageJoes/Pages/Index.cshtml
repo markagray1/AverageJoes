@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="titleContainer">
+    <div>
+    <p class="title">Average Joe's</p>
+    </div>
+    <div class="titleImage"></div>
+</div>
+
+<div class="aboutAJ">
+    <h1>Welcome</h1>
+    <p class="aboutAJtext">The official website of Average Joe's offers information and merchandise from the Dodgeball Movie, 
+        as well as gym products that will enhance your fitness journey.
+        Don't forget to click our links at the top, or images down below and join the Average Joe's team today! 
+        </p>
+</div>
+
+<div class="homeImages">
+    <a href="/AboutUs">
+    <div class="aboutusLink">
+       About Us
+        </div>
+    </a>
+    <a href="/Dodgeball">
+    <div class="dodgeballLink">
+        Dodgeball
+        </div>
+    </a>
+    <a href="GymwearProducts">
+    <div class="productsLink">
+        Gymwear/Products
+        </div>
+    </a>
+</div>
+
+<div class="videoContainer">
+    <div class="video">
+        @* 16:9 aspect ratio *@
+        <div class="ratio ratio-16x9">
+            @* place embed code from YouTube video inside this div *@
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eYEjUhWCWxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="videoText">
+        <p>Enjoy this funny Dodgeball clip!</p>
+    </div>
+</div>

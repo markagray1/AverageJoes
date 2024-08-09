@@ -1,0 +1,299 @@
+﻿@page
+@model AverageJoes.Pages.DodgeballModel
+@{
+}
+
+
+<div>
+    <h1 class="dodgeballtitle">Dodgeball Merchandise</h1>
+</div>
+
+<div class="row dodgeballcarousel">
+    <div class="col-sm-12">
+        @* The name of the ID must be unique on the page. No spaces allowed in the name. *@
+        @* The "slide" class is the visual affect when the images transition from
+        one to another. *@
+        <div id="dodgeballcarousel" class="carousel slide text-center" data-bs-ride="carousel">
+
+            @* Indicators/Dots Do not want to use these
+            <div class="carousel-indicators">
+                @* Add a button tag for each picture in your carousel.
+                Only ONE of the buttons should have a class="active".
+
+                The buttons are zero-index-based so the first image
+                has a data-bs-slide-to of '0', the 2nd image is '1', etc. 
+                <button type="button" data-bs-target="#dodgeballcarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#dodgeballcarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#dodgeballcarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#dodgeballcarousel" data-bs-slide-to="3"></button>
+            </div>
+            *@
+
+            @* The slideshow/carousel  *@
+            <div class="carousel-inner d-flex">
+                @* Only one of the images should be 'active' and it should correspond
+                to the images. *@
+
+                @* Duplicate the div because without the 'active' for any other images. *@
+                    
+                <div class="carousel-item active">
+                    <form method="post">
+                    <div>
+                            <h3 class="dodgeballitemtype">Average Joe's Jerseys ($49.99)</h3>
+                    </div>
+                        <img src="~/images/tee-g10e6c438c_1280.png" alt="Average Joe's Jersey" class="img-fluid w-50 dodgeballCarouselPic" />
+                        <div class="size">
+                            <div>
+                                <label>Pick your size</label>
+                            </div>
+                            <div>
+                                <select asp-for="Size1">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="size">
+                            <div>
+                                <label>Pick your color</label>
+                            </div>
+                            <div>
+                                <select asp-for="Color1">
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="White">White</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="size">
+                            <div>
+                                <label>Do you want a captain stitch</label>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch1" value="Stitch" checked /> Stitch
+                                </div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch1" value="No Stitch" /> No Stitch
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-light" value="Clear" />
+                                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection1" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>@Model.Message1</label>
+                            </div>
+                        </div>
+                </form>
+                </div>
+                
+                
+
+                
+                <div class="carousel-item">
+                    <form method="post">
+                    <div>
+                        <h3 class="dodgeballitemtype">Average Joe's Shorts ($15.99)</h3>
+                    </div>
+                    <img src="~/images/shorts-g3f0d00304_1280.png" alt="Average Joe's Shorts" class="img-fluid w-50 dodgeballCarouselPic"/>
+                    <div class="size">
+                            <div>
+                                <label>Pick your size</label>
+                            </div>
+                            <div>
+                                <select asp-for="Size2">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="size">
+                            <div>
+                                <label>Pick your color</label>
+                            </div>
+                            <div>
+                                <select asp-for="Color2">
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="White">White</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="size">
+                            <div>
+                                <label>Do you want a captain stitch</label>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch2" value="Stitch" checked /> Stitch
+                                </div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch2" value="No Stitch" /> No Stitch
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-light" value="Clear" />
+                                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection2" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>@Model.Message2</label>
+                            </div>
+                        </div>
+                </form>
+                </div>
+                
+
+                
+                <div class="carousel-item">
+                    <form method="post">
+                    <div>
+                            <h3 class="dodgeballitemtype">Average Joe's Headbands ($9.99)</h3>
+                    </div>
+                        <img src="~/images/istockphoto-165908280-1024x1024.jpg" alt="Average Joe's Headband" class="img-fluid w-50 dodgeballCarouselPic"/>
+                        <div class="size">
+                            <div>
+                                <label>Pick your size</label>
+                            </div>
+                            <div>
+                                <select asp-for="Size3">
+                                    <option value="Kid">Kid</option>
+                                    <option value="Adult">Adult</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="size">
+                            <div>
+                                <label>Pick your color</label>
+                            </div>
+                            <div>
+                                <select asp-for="Color3">
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="White">White</option>
+                                    <option value="Red">Red</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="size">
+                            <div>
+                                <label>Do you want a captain stitch</label>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch3" value="Stitch" checked /> Stitch
+                                </div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch3" value="No Stitch" /> No Stitch
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-light" value="Clear" />
+                                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection3" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>@Model.Message3</label>
+                            </div>
+                        </div>
+                </form>
+                </div>
+                
+
+
+                
+                <div class="carousel-item">
+                    <form method="post">
+                    <div>
+                            <h3 class="dodgeballitemtype">Average Joe's Wristbands ($4.99)</h3>
+                    </div>
+                        <img src="~/images/istockphoto-1210071423-1024x1024.jpg" alt="Average Joe's Wristband" class="img-fluid w-50 dodgeballCarouselPic" />
+                        <div class="size">
+                            <div>
+                                <label>Pick your size</label>
+                            </div>
+                            <div>
+                                <select asp-for="Size4">
+                                    <option value="Kid">Kid</option>
+                                    <option value="Adult">Adult</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="size">
+                            <div>
+                                <label>Pick your color</label>
+                            </div>
+                            <div>
+                                <select asp-for="Color4">
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="White">White</option>
+                                    <option value="Red">Red</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="size">
+                            <div>
+                                <label>Do you want a captain stitch</label>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch4" value="Stitch" checked /> Stitch
+                                </div>
+                                <div>
+                                    <input type="radio" asp-for="Stitch4" value="No Stitch" /> No Stitch
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-light" value="Clear" />
+                                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection4" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>@Model.Message4</label>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+                
+
+            </div>
+
+            @* Left and right controls/icons *@
+            @* The data-bs-target has to be the name used in the ID of the carousel
+            with a '#' in front of the name.*@
+            <button class="carousel-control-prev" type="button" data-bs-target="#dodgeballcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#dodgeballcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+

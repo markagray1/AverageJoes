@@ -1,0 +1,406 @@
+﻿@page
+@model AverageJoes.Pages.GymwearProductsModel
+@{
+}
+
+<div>
+    <h1 class="gymwearproductstitle">Gymwear and Products</h1>
+</div>
+
+<div class="gymwearcontainer">
+    <div>
+        <h2 id="gymweartitle">Gymwear</h2>
+    </div>
+    <div class="gymwearitems">
+
+        <form method="post">
+        <div class="gymitem1">
+            
+            <div id="gymitem1pic"></div>
+            <div>
+                    <h5>T-Shirts ($19.99)</h5>
+            </div>
+                <div class="size">
+                            <div>
+                                <label>Pick your size</label>
+                            </div>
+                            <div>
+                                <select asp-for="Size1">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+
+                <div class="size">
+                    <div>
+                        <label>Pick your color</label>
+                    </div>
+                    <div>
+                        <select asp-for="Color1">
+                            <option value="Yellow">Yellow</option>
+                            <option value="White">White</option>
+                            <option value="Gray">Gray</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <div>
+                        <label>Pick your quality</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" asp-for="Quality1" value="Regular" checked /> Regular
+                        </div>
+                        <div>
+                            <input type="radio" asp-for="Quality1" value="High Quality" /> High Quality
+                        </div>
+                    </div>
+                </div>
+
+                        <div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-light" value="Clear"/>
+                                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection1"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label>@Model.Message1</label>
+                            </div>
+                        </div>
+                </div>
+            </form>
+        
+        <form method="post">
+        <div class="gymitem2">
+            <div id="gymitem2pic"></div>
+            <div>
+                    <h5>Tank Tops ($19.99)</h5>
+            </div>
+                <div class="size">
+            <div>
+                <label>Pick your size</label>
+            </div>
+            <div>
+                <select asp-for="Size2">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </div>
+        </div>
+
+                <div class="size">
+                    <div>
+                        <label>Pick your color</label>
+                    </div>
+                    <div>
+                        <select asp-for="Color2">
+                            <option value="Yellow">Yellow</option>
+                            <option value="White">White</option>
+                            <option value="Gray">Gray</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <div>
+                        <label>Pick your quality</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" asp-for="Quality2" value="Regular" checked /> Regular
+                        </div>
+                        <div>
+                            <input type="radio" asp-for="Quality2" value="High Quality" /> High Quality
+                        </div>
+                    </div>
+                </div>
+
+        <div>
+            <div>
+                <input type="submit" class="btn btn-outline-light" value="Clear" />
+                <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection2" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>@Model.Message2</label>
+            </div>
+        </div>
+    </div>
+    </form>
+        
+
+    <form method="post">
+        <div class="gymitem3">
+            <div id="gymitem3pic"></div>
+            <div>
+                    <h5>Sweatshirts ($29.99)</h5>
+            </div>
+    <div class="size">
+        <div>
+            <label>Pick your size</label>
+        </div>
+        <div>
+            <select asp-for="Size3">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+        </div>
+    </div>
+
+                <div class="size">
+                    <div>
+                        <label>Pick your color</label>
+                    </div>
+                    <div>
+                        <select asp-for="Color3">
+                            <option value="Yellow">Yellow</option>
+                            <option value="White">White</option>
+                            <option value="Gray">Gray</option>
+                        </select>
+                    </div>
+                </div>
+
+    <div class="size">
+                    <div>
+                                    <label>Pick your quality</label>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="radio" asp-for="Quality3" value="Regular" checked /> Regular
+                                    </div>
+                        <div>
+                                        <input type="radio" asp-for="Quality3" value="High Quality" /> High Quality
+                                    </div>
+                                </div>
+                            </div>
+
+    <div>
+        <div>
+            <input type="submit" class="btn btn-outline-light" value="Clear" />
+            <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection3" />
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <label>@Model.Message3</label>
+        </div>
+    </div>
+</div>
+        </form>
+        </div>
+    </div>
+        
+
+
+
+
+<div class="productcontainer">
+    <div>
+        <h2 id="producttitle">Products</h2>
+    </div>
+    <div class="productitems">
+
+    <form method="post">
+        <div class="productitem1">
+            <div id="productitem1pic"></div>
+            <div>
+                    <h5>Protein Powder ($49.99)</h5>
+            </div>
+        
+            <div class="size">
+                <div>
+                    <label>Pick your quantity</label>
+                </div>
+                <div>
+                    <select asp-for="Quantity1">
+                        <option value="1 Tub">1 Tub</option>
+                        <option value="2 Tubs">2 Tubs</option>
+                        <option value="3 Tubs">3 Tubs</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your size</label>
+                </div>
+                <div>
+                    <select asp-for="Size4">
+                        <option value="10 Ounces">10 Ounces</option>
+                        <option value="20 Ounces">20 Ounces</option>
+                        <option value="30 Ounces">30 Ounces</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your flavor</label>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" asp-for="Flavor1" value="Chocolate" checked /> Chocolate
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Flavor1" value="Vanilla" /> Vanilla
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" class="btn btn-outline-light" value="Clear" />
+                    <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection4" />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label>@Model.Message4</label>
+                </div>
+            </div>
+            </div>
+        </form>
+        
+        <form method="post">
+        <div class="productitem2">
+            <div id="productitem2pic"></div>
+            <div>
+                    <h5>Preworkout ($29.99)</h5>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your quantity</label>
+                </div>
+                <div>
+                    <select asp-for="Quantity2">
+                        <option value="1 Tub">1 Tub</option>
+                        <option value="2 Tubs">2 Tubs</option>
+                        <option value="3 Tubs">3 Tubs</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your size</label>
+                </div>
+                <div>
+                    <select asp-for="Size5">
+                        <option value="4 Ounces">4 Ounces</option>
+                        <option value="8 Ounces">8 Ounces</option>
+                        <option value="12 Ounces">12 Ounces</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your flavor</label>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" asp-for="Flavor2" value="Blue Rasberry" checked /> Blue Rasberry
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Flavor2" value="Cherry Limeade" /> Cherry Limeade
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Flavor2" value="Green Apple" /> Green Apple
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" class="btn btn-outline-light" value="Clear" />
+                    <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection5" />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label>@Model.Message5</label>
+                </div>
+            </div>
+
+        </div>
+        </form>
+
+        <form method="post">
+        <div class="productitem3">
+            <div id="productitem3pic"></div>
+            <div>
+                    <h5>Energy Drinks ($5.99)</h5>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your quantity</label>
+                </div>
+                <div>
+                    <select asp-for="Quantity3">
+                        <option value="1 Can">1 Can</option>
+                        <option value="6 Cans">6 Cans</option>
+                        <option value="12 Cans">12 Cans</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your size</label>
+                </div>
+                <div>
+                    <select asp-for="Size6">
+                        <option value="8 Ounces">8 Ounces</option>
+                        <option value="12 Ounces">12 Ounces</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <label>Pick your flavor</label>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" asp-for="Flavor3" value="Lemon-Lime" checked /> Lemon-Lime
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Flavor3" value="Fruit Punch" /> Fruit Punch
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Flavor3" value="Watermelon" /> Watermelon
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" class="btn btn-outline-light" value="Clear" />
+                    <input type="submit" class="btn btn-outline-light" asp-page-handler="ShowSelection6" />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label>@Model.Message6</label>
+                </div>
+            </div>
+
+        </div>
+        </form>
+        </div>
+    </div>
