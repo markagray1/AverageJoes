@@ -1,6 +1,6 @@
 # AverageJoes
 
-This is a clothing company school project based on the team AverageJoes from the movie "Dodgeball". This app provides details about the AverageJoes team from the movie, as well as CRUD functionalities for clothes the team wore. There are additional features to enhance the user experience
+This is a clothing company school project based on the team AverageJoes from the movie "Dodgeball". This app provides details about the AverageJoes team from the movie, as well as CRUD functionalities for clothes the team wore. There are additional features to enhance the user experience.
 
 ## Features
 
