@@ -1,4 +1,4 @@
-use SP23_Web_ksmgray18
+use #Placeholder
 go
 
 drop view if exists ViewProductList
